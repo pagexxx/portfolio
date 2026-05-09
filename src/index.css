@@ -50,6 +50,15 @@
   transition: opacity 1s ease, transform 1s ease;
 }
 
+@media (max-width: 400px) {
+  .page { padding: 1.25rem; }
+  .card { padding: 2.25rem 1.75rem; border-radius: 22px; }
+  .photo-circle { width: 100px; height: 100px; }
+  .name { font-size: 1.35rem; }
+  .bio { margin-top: 1.4rem; }
+  .divider { margin: 1.4rem 0; }
+}
+
 .card.visible {
   opacity: 1;
   transform: none;

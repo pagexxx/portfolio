@@ -10,9 +10,11 @@ export default function App() {
   }, [])
 
   return (
-    <div className="page">
+    <div className="page" style={{ backgroundImage: `url(${photo})` }}>
+      <div className="overlay" />
+
       <main className={`card ${mounted ? 'visible' : ''}`}>
-        <img src={photo} alt="Yasutoshi Yoshikawa" className="photo-circle" style={{ objectFit: 'cover' }} />
+        <img src={photo} alt="Yasutoshi Yoshikawa" className="photo-circle" />
 
         <div className="bio">
           <h1 className="name">Yasutoshi Yoshikawa</h1>
